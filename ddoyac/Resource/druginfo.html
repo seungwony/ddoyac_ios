@@ -1,0 +1,1019 @@
+<html><head><meta name='viewport'  http-equiv="Content-Type" content="text/html; charset=utf-8; width=device-width, user-scalable=no"><base href=''><style>
+
+    
+* {  font-size :1.06em; line-height: 1.6em; } body { padding:10px; }
+ul {
+	list-style: none;
+	padding:0px;
+	margin: 0px;
+}
+
+li{
+	margin-bottom: 15px;
+}
+
+.title{
+	   margin-bottom: 2px;
+	font-weight: 600;
+    color: #2196f3;
+}
+.content{
+	font-size: 0.9em;
+    margin-left: 5px;
+}
+
+li.doc-data .sub-title{
+	font-size: 0.8em;
+
+}
+li.doc-data .nb .sub-title{
+    margin: 5px;
+       font-size: 0.7em;
+    color: #f10;
+}
+li.doc-data .nb{
+
+	margin-bottom: 8px;
+}
+
+li.doc-data .ud .sub-title{
+    margin: 5px;
+       font-size: 0.7em;
+
+}
+li.doc-data .ud{
+
+	margin-bottom: 8px;
+}
+
+li.doc-data .sub-content{
+	    font-size: 0.7em;
+    line-height: 1.8;
+    margin-bottom: 2px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+li.doc-data .nb .sub-content{
+	    font-size: 0.6em;
+    line-height: 1.8;
+    margin-bottom: 2px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+table{
+	width:100%;
+	text-align:center;
+	border: solid 1px #ddd;
+    font-size: 0.7em;
+    margin-top: 8px;
+    border-radius: 3px;
+    border-collapse: collapse;
+}
+
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+        padding: 6px 0px;
+        background: #f4f4f4;
+}
+
+table.doc-table{
+	font-size: small;
+}
+
+table.doc-table > tbody > tr:nth-child(2n+1){
+	border-bottom: solid 1px;
+    background: #f9f9f9;
+}
+
+table.doc-table > tbody td{
+	border-bottom: solid 1px #f4f4f4;
+        padding: 0px 5px;
+	border-color: #f4f4f4!important;
+	background-color: initial!important;
+}
+
+table.doc-table > tbody td p {
+    margin: 8px 5px;
+    font-size: 0.9em;
+}
+
+table.doc-table table tbody td {
+	width: initial!important;
+    padding: 0px 0px;
+    border-bottom: solid 1px #ddd;
+
+
+}
+
+table thead td, table thead th {
+    border-bottom-width: 2px;
+}
+table thead.div3 th{
+	width: 33.3%;
+}
+
+table thead.div2 th{
+	width: 50%;
+}
+table tbody td{
+	padding: 5px 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+    
+    table thead th {
+        background-color: #272727;
+    }
+}	
+</style></head>
+<body>
+
+<div >
+	<ul id="drug-data">
+<!-- 		 <li>
+			<div class="title">업소</div>
+			<div class="content">영진약품(주)</div>				
+		</li>
+		<li>
+			<div class="title">효능</div>
+			<div class="content">동맥경화용제</div>				
+		</li>
+		<li>
+			<div class="title">성상</div>
+			<div class="content">흰색의타원형필름코팅정</div>				
+		</li>
+
+		<li>
+			<div class="title">사이즈(mm)</div>
+			<div class="content">
+				<table>
+					<thead>
+					  <tr>
+					    <th>장</th>
+					    <th>단</th>
+					    <th>두께</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+					    <td>10.43</td>
+					    <td>4.3</td>
+					    <td>2.8</td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>				
+		</li>
+
+		<li>
+			<div class="title">분할선</div>
+			<div class="content">
+				<table>
+					<thead>
+					  <tr>
+					    <th>앞</th>
+					    <th>뒤</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+					    <td></td>
+					    <td>+</td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>				
+		</li>
+
+				<li>
+			<div class="title">색깔</div>
+			<div class="content">
+				<table>
+					<thead>
+					  <tr>
+					    <th>앞</th>
+					    <th>뒤</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+					    <td>노랑</td>
+					    <td>하양</td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>				
+		</li> -->
+	</ul>
+	
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript" charset="utf-8" async defer>
+
+	
+function saveHtml(code){
+  // UID = uid;
+  if(typeof Android !== "undefined" && Android !== null) {
+      Android.saveHtml(code);
+  } else {
+      alert("Not viewing in webview");
+  }
+
+}
+
+
+function exceptionJson(code){
+	if(typeof Android !== "undefined" && Android !== null) {
+      Android.exceptionJson(code);
+  } else {
+      alert("Not viewing in webview");
+  }
+}
+
+
+function adjustSize(){
+	try{
+		webkit.messageHandlers.callbackHandler.postMessage("adjustSize");
+
+	}catch(error){
+		alert(error)
+	}
+}
+
+// }
+// function showJson(json_str){
+// 	var drug_data = document.getElementById('drug-data');
+// 	drug_data.innerHTML = json_str;
+// }
+
+
+function initExtend(extend){
+	// var drug_data = document.getElementById('drug-data');
+	// drug_data.innerHTML = json_str;
+	// initData(ori, extend);
+	var drug_data = document.getElementById('drug-data');
+	var storage_method = "";
+	var valid_term = "";
+
+
+	if(extend != undefined){
+		var extend_json = JSON.parse(extend);
+
+
+		valid_term = '<li><div class="title">유효기간</div><div class="content">'+extend_json.valid_term+'</div></li>';
+
+		storage_method = '<li><div class="title">저장방법</div><div class="content">'+extend_json.storage_method+'</div></li>';
+
+	}
+
+	drug_data.innerHTML = valid_term + storage_method;
+
+
+}
+function initDataWithExtendXml(ori, xml){
+
+	// exceptionJson(xml);
+	var drug_data = document.getElementById('drug-data');
+    var bridgeMsgJson = ori.replace(/\r?\n|\r/g, '\\r\\n');
+	var json = JSON.parse(bridgeMsgJson);
+	var xml = b64DecodeUnicode(xml);
+	// drug_data.innerHTML = json.p_no + " " + json.p_name;
+
+    //var xml = xml.replace(/\r?\n|\r/g, '\\r\\n');
+    
+	var p_no = json.p_no;
+	var p_name = json.p_name;
+	
+	var c_no = json.c_no;
+	var c_name = json.c_name;
+	
+	var des = json.des;
+	var img = json.img;
+	var mark_front = json.mark_front;
+	var mark_back = json.mark_back;
+	var shape = json.shape;
+	var color_front = json.color_front;
+	var color_back = json.color_back;
+
+	var div_front = json.div_front;
+	var div_back = json.div_back;
+
+	var major_axis = json.major_axis;	
+	var minor_axis = json.minor_axis;	
+	var thickness = json.thickness;
+
+
+	var img_created = json.img_created;
+
+	var class_no = json.class_no;
+	var class_name = json.class_name;
+	var specialization = json.specialization;
+	var approval = json.approval;
+	var shape_code = json.shape_code;
+	var updated = json.updated;
+
+	var storage_method = "";
+	var valid_term = "";
+	var effect = "";
+
+	var main_item_ingr = "";
+	var ingr_name = "";
+
+	var nb_doc_data = "";
+	var ud_doc_data = "";
+
+
+	if(xml != undefined){
+
+		function doc_data(title, tag, tagName){
+
+				if(xmlDoc.getElementsByTagName(tagName).length < 1) return "";
+
+
+				var txt = '<li class="doc-data"> <div class="title">'+title+'</div>';
+			    
+			     var d_data = xmlDoc.getElementsByTagName(tagName)[0].childNodes;
+			     
+
+			     
+			     for (var i = 0; i < d_data.length ;i++) {
+			        
+
+								var articles = d_data[i].getElementsByTagName("ARTICLE");
+
+			                              
+			        for(var j = 0 ; j< articles.length ; j++){
+			        			       
+			        			 var sub_title = articles[j].attributes.getNamedItem("title").nodeValue; 		 
+			               // console.log(articles[j].attributes.getNamedItem("title").nodeValue);
+			        		 // console.log(articles[j].textContent);           
+			        		 txt += '<div class="'+tag+'"><div class="sub-title">'+sub_title+'</div>';
+
+			        		 var paragraps = articles[j].getElementsByTagName("PARAGRAPH");
+			             
+				             for(var k = 0 ; k < paragraps.length; k++){
+				             		// console.log(paragraps[k].textContent);
+				             		var tagName = paragraps[k].attributes.getNamedItem("tagName").nodeValue;
+                                                        
+
+
+				             		var paragrap = paragraps[k].textContent;
+				             		 if(tagName == 'table'){
+                                    	
+                                        txt += '<table class="doc-table">'+paragrap+'</table>';
+                                    
+                                    }else{
+                      		              txt += '<div class="sub-content ">'+paragrap+'</div>';
+                                    }
+				             		
+				             }
+
+
+				             txt += '</div>';
+
+				            
+			             
+			           }
+			          
+					
+
+			     }
+
+			     txt += '</li>'; 
+
+			     return txt;
+			}
+
+			function getTextByTagName(tagName){
+				var x = xmlDoc.getElementsByTagName(tagName);
+
+				if(x.length>0){
+			  	if(x[0].childNodes.length >0){
+			    	return x[0].childNodes[0].nodeValue;
+			    }
+			  }else{
+			  	return "";
+			  }
+			}
+
+		var parser = new DOMParser();
+		var xmlDoc = parser.parseFromString(xml,"text/xml");
+
+
+		//성상
+		var chart =getTextByTagName("CHART");
+
+	//표준코드
+	  var bar_code = getTextByTagName("BAR_CODE");
+	  
+	  //취하구분
+	  var cancel_name = getTextByTagName("CANCEL_NAME");
+	  
+	  //분류
+	  var class_no = getTextByTagName("CLASS_NO");
+	  
+	  //위탁제조업체
+	  var cnsgn_manuf = getTextByTagName("CNSGN_MANUF");
+	  
+	    //제조방법
+	  var doc_text = getTextByTagName("DOC_TEXT");
+	  
+	  //보험코드
+	  var edi_code = getTextByTagName("EDI_CODE");
+	  
+	    //효능효과 pdf
+	   var ee_doc_id = getTextByTagName("EE_DOC_ID");
+	  
+	  //업체명
+	  var entp_name = getTextByTagName("ENTP_NAME");
+	  
+	  //업체명
+	  var entp_no = getTextByTagName("ENTP_NO");
+	  
+	  //업체허가번호
+	  var etc_otc_code = getTextByTagName("ETC_OTC_CODE");
+	  
+	  //변경이력
+	  var gbn_name = getTextByTagName("GBN_NAME");
+	  
+	    //업종구분
+	  var induty_type = getTextByTagName("INDUTY_TYPE");
+	  
+	    //첨가제
+	  var induty_type = getTextByTagName("INGR_NAME");
+	  
+	  
+	    //첨부문서
+	  var insert_file = getTextByTagName("INSERT_FILE");
+	  
+	  
+	  //품목명
+	  var item_name = getTextByTagName("ITEM_NAME");
+	  
+	  //허가일자
+	  var item_permit_date = getTextByTagName("ITEM_PERMIT_DATE");
+	  
+	  //품목기준코드
+	  var item_seq = getTextByTagName("ITEM_SEQ");
+	  
+	  //유효성분
+	  var main_item_ingr = getTextByTagName("MAIN_ITEM_INGR");
+	  
+	  
+	  // 완제/원료구분
+	    var make_material_flag = getTextByTagName("MAKE_MATERIAL_FLAG");
+	  
+	  //원료성분
+	  var material_name = getTextByTagName("MATERIAL_NAME");
+	  
+	  
+	    //주의사항 pdf
+	  var nb_doc_id = getTextByTagName("NB_DOC_ID");
+	  
+	  
+	  // 신약
+	  var newdrug_class_name = getTextByTagName("NEWDRUG_CLASS_NAME");
+	  
+	  // 포장단위
+	  var pack_unit = getTextByTagName("PACK_UNIT");
+	  
+	  //허가/신고구분
+	    var permit_kind_name = getTextByTagName("PERMIT_KIND_NAME");
+	  
+	    var reexam_date = getTextByTagName("REEXAM_DATE");
+	  
+	  //저장방법
+	    var storage_method = getTextByTagName("STORAGE_METHOD"); 
+	    
+	//유효기간
+		var valid_term = getTextByTagName("VALID_TERM")
+	  
+	  
+	  
+	  
+	  // console.log("효능효과");
+	  //효능효과
+		effect = doc_data("효능·효과", "ee", "EE_DOC_DATA");
+	     
+
+	  // console.log("주의사항(일반) 문서 데이터");
+	  //주의사항(일반) 문서 데이터
+		 nb_doc_data = doc_data("사용상 주의사항", "nb", "NB_DOC_DATA");
+	  
+	  
+	    // console.log("용법 용량");
+	    //용법 용량
+		ud_doc_data = doc_data("용법·용량", "ud", "UD_DOC_DATA");	
+		
+
+
+
+		valid_term = '<li><div class="title">유효기간</div><div class="content">'+valid_term+'</div></li>';
+
+
+				storage_method = '<li><div class="title">저장방법</div><div class="content">'+storage_method+'</div></li>';
+
+
+				main_item_ingr = '<li><div class="title">완제/원료구분</div><div class="content">'+main_item_ingr+'</div></li>';
+
+				ingr_name = '<li><div class="title">첨가제</div><div class="content">'+ingr_name+'</div></li>';	
+
+
+
+	}
+
+
+     
+
+ 	var result = '';
+
+	var product = '<li><div class="title">품목</div><div class="content">'+p_name+'</div></li>';
+	
+
+	var company = '<li><div class="title">업소</div><div class="content">'+c_name+'</div></li>';
+
+
+
+	var class_name = '<li><div class="title">효능</div><div class="content">'+class_name+'</div></li>';
+
+
+	if(effect == ''){
+		effect = class_name;
+	}
+
+	var des = '<li><div class="title">성상</div><div class="content">'+des+'</div></li>';
+
+
+	var size = '<li><div class="title">사이즈(mm)</div><div class="content"><table><thead class="div3"><tr><th >장</th><th>단</th><th>두께</th></tr></thead><tbody><tr><td>'+major_axis+'</td><td>'+minor_axis+'</td><td>'+thickness+'</td></tr></tbody></table></div></li>';
+
+   
+	var div = '<li><div class="title">분할선</div><div class="content"><table><thead class="div2"><tr><th>앞</th><th>뒤</th></tr></thead><tbody><tr><td>'+div_front+'</td><td>'+div_back+'</td></tr></tbody></table></div></li>';
+
+
+	var color = '<li><div class="title">색깔</div><div class="content"><table><thead class="div2"><tr><th>앞</th><th>뒤</th></tr></thead><tbody><tr><td>'+color_front+'</td><td>'+color_back+'</td></tr></tbody></table></div></li>';
+
+	result = product + company + effect +  nb_doc_data + ud_doc_data+ des + size + div + color + storage_method +  valid_term + main_item_ingr + ingr_name ;
+	drug_data.innerHTML = result;
+    
+
+	adjustSize();
+	// var chart = xmlDoc.getElementsByTagName("CHART")[0].childNodes[0].nodeValue;
+
+	// var drug_data = document.getElementById('drug-data');
+	// drug_data.innerHTML = chart;
+
+
+	// exceptionJson(extend);
+}
+
+function initDataWithExtend(ori, extend){
+	// var drug_data = document.getElementById('drug-data');
+	// drug_data.innerHTML = json_str;
+	initData(ori, extend);
+}
+
+//table 표시(앞,뒤), 색깔(앞,뒤), 분할선(앞,뒤), 사이즈(장, 단, 두께)
+function initData(json_str, extend){
+ 
+
+	var drug_data = document.getElementById('drug-data');
+
+	var json = JSON.parse(json_str);
+	// drug_data.innerHTML = json.p_no + " " + json.p_name;
+
+
+	var p_no = json.p_no;
+	var p_name = json.p_name;
+	
+	var c_no = json.c_no;
+	var c_name = json.c_name;
+	
+	var des = json.des;
+	var img = json.img;
+	var mark_front = json.mark_front;
+	var mark_back = json.mark_back;
+	var shape = json.shape;
+	var color_front = json.color_front;
+	var color_back = json.color_back;
+
+	var div_front = json.div_front;
+	var div_back = json.div_back;
+
+	var major_axis = json.major_axis;	
+	var minor_axis = json.minor_axis;	
+	var thickness = json.thickness;
+
+
+	var img_created = json.img_created;
+
+	var class_no = json.class_no;
+	var class_name = json.class_name;
+	var specialization = json.specialization;
+	var approval = json.approval;
+	var shape_code = json.shape_code;
+	var updated = json.updated;
+
+	var storage_method = "";
+	var valid_term = "";
+	var effect = "";
+
+	var main_item_ingr = "";
+	var ingr_name = "";
+
+	var nb_doc_data = "";
+	var ud_doc_data = "";
+
+	if(extend != undefined){
+
+		try{
+				var extend_json = JSON.parse(extend);
+
+
+				valid_term = '<li><div class="title">유효기간</div><div class="content">'+extend_json.valid_term+'</div></li>';
+
+
+				storage_method = '<li><div class="title">저장방법</div><div class="content">'+extend_json.storage_method+'</div></li>';
+
+
+				main_item_ingr = '<li><div class="title">완제/원료구분</div><div class="content">'+extend_json.main_item_ingr+'</div></li>';
+
+				ingr_name = '<li><div class="title">첨가제</div><div class="content">'+extend_json.ingr_name+'</div></li>';
+
+				effect = '<li class="doc-data"><div class="title">효능·효과</div><div class="sub-content">';
+				
+				extend_json.ee_doc_data.forEach(function(data, idx){
+				    
+				    effect += data + "<br>";
+				});
+				effect += '</div></li>';
+
+
+
+				nb_doc_data = '<li class="doc-data"> <div class="title">사용상 주의사항</div>';
+
+				extend_json.nb_doc_data.forEach(function(data, idx){
+				    
+				    if ( data.p == undefined ) {
+
+						nb_doc_data += data+ "<br>";
+				    }else{
+				    	 nb_doc_data += '<div class="nb"><div class="sub-title">'+data.title+'</div>';
+
+						data.p.forEach(function(d, i){
+							nb_doc_data += '<div class="sub-content ">'+d+'</div>';
+						});
+						
+						nb_doc_data += '</div>';
+				    }
+				   
+
+				    
+				});
+				nb_doc_data += '</li>';
+
+
+
+				ud_doc_data = '<li class="doc-data"><div class="title">용법·용량</div><div class="sub-content">';
+
+				extend_json.ud_doc_data.forEach(function(data, idx){
+				    if ( data.p == undefined ) {
+				    	ud_doc_data += data+ "<br>";
+				    }else{
+ 						ud_doc_data += '<div class="ud"><div class="sub-title">'+data.title+'</div>';
+
+						data.p.forEach(function(d, i){
+							ud_doc_data += '<div class="sub-content ">'+d+'</div>';
+						});
+						
+						ud_doc_data += '</div>';
+				    }
+				    
+
+				    
+				});
+				ud_doc_data += '</div></li>';
+		}catch(error){
+			console.error(error);
+
+
+			exceptionJson(extend);
+		}
+
+	}
+
+
+
+ 	var result = '';
+
+	var product = '<li><div class="title">품목</div><div class="content">'+p_name+'</div></li>';
+	
+
+	var company = '<li><div class="title">업소</div><div class="content">'+c_name+'</div></li>';
+
+
+
+	var class_name = '<li><div class="title">효능</div><div class="content">'+class_name+'</div></li>';
+
+
+	if(effect == ''){
+		effect = class_name;
+	}
+
+	var des = '<li><div class="title">성상</div><div class="content">'+des+'</div></li>';
+
+
+	var size = '<li><div class="title">사이즈(mm)</div><div class="content"><table><thead class="div3"><tr><th >장</th><th>단</th><th>두께</th></tr></thead><tbody><tr><td>'+major_axis+'</td><td>'+minor_axis+'</td><td>'+thickness+'</td></tr></tbody></table></div></li>';
+
+   
+	var div = '<li><div class="title">분할선</div><div class="content"><table><thead class="div2"><tr><th>앞</th><th>뒤</th></tr></thead><tbody><tr><td>'+div_front+'</td><td>'+div_back+'</td></tr></tbody></table></div></li>';
+
+
+	var color = '<li><div class="title">색깔</div><div class="content"><table><thead class="div2"><tr><th>앞</th><th>뒤</th></tr></thead><tbody><tr><td>'+color_front+'</td><td>'+color_back+'</td></tr></tbody></table></div></li>';
+
+	result = product + company + effect +  nb_doc_data + ud_doc_data+ des + size + div + color + storage_method +  valid_term + main_item_ingr + ingr_name ;
+	drug_data.innerHTML = result;
+  // if(typeof Android !== "undefined" && Android !== null) {
+  //     Android.showToast(json);
+  // } else {
+  //     alert("Not viewing in webview");
+  // }
+
+
+  saveHtml(document.documentElement.innerHTML);
+
+}
+
+
+// function getMoreDetailApi(id){
+
+//     var xmlhttp = new XMLHttpRequest();
+
+//     xmlhttp.onreadystatechange = function() {
+//         if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+//            if (xmlhttp.status == 200) {
+
+//            		// xmlhttp.responseText
+// 				var drug_data = document.getElementById('drug-data');
+//                drug_data.innerHTML = xmlhttp.responseText;
+//            }
+//            else if (xmlhttp.status == 400) {
+//               alert('There was an error 400');
+//            }
+//            else {
+//                alert(xmlhttp.status);
+//            }
+//         }
+//     };
+
+//     console.log("http://apis.data.go.kr/1471057/MdcinPrductPrmisnInfoService1/getMdcinPrductItem?ServiceKey=SxFlIFuuam1GbQpirOoR%2FSkLZRJN9Qwf4a3%2FI3QkmE%2Fij6u07joiJ6DgZmToQElFA32HgCgMTZ%2BEaayfFLXthg%3D%3D&item_seq="+id);
+
+//     xmlhttp.open("GET", "http://apis.data.go.kr/1471057/MdcinPrductPrmisnInfoService1/getMdcinPrductItem?ServiceKey=SxFlIFuuam1GbQpirOoR%2FSkLZRJN9Qwf4a3%2FI3QkmE%2Fij6u07joiJ6DgZmToQElFA32HgCgMTZ%2BEaayfFLXthg%3D%3D&item_seq="+id, true);
+//     xmlhttp.send();
+	
+// }
+
+//http://apis.data.go.kr/1471057/MdcinPrductPrmisnInfoService1/getMdcinPrductItem?ServiceKey=SxFlIFuuam1GbQpirOoR%2FSkLZRJN9Qwf4a3%2FI3QkmE%2Fij6u07joiJ6DgZmToQElFA32HgCgMTZ%2BEaayfFLXthg%3D%3D&item_seq=199304470
+// function test(p_no){
+// 	var xhr = new XMLHttpRequest();
+// 	xhr.onload = function() {
+// 	  if (xhr.status === 200 || xhr.status === 201) {
+// 	    console.log(xhr.responseText);
+// 	    setXml(xhr.responseText);
+// 	  } else {
+// 	    console.error(xhr.responseText);
+// 	  }
+// 	};
+// 	xhr.open('GET', 'http://apis.data.go.kr/1471057/MdcinPrductPrmisnInfoService1/getMdcinPrductItem?ServiceKey=SxFlIFuuam1GbQpirOoR%2FSkLZRJN9Qwf4a3%2FI3QkmE%2Fij6u07joiJ6DgZmToQElFA32HgCgMTZ%2BEaayfFLXthg%3D%3D&item_seq='+p_no);
+// 	xhr.send();
+// }
+
+// function setXml(xml){
+// 	if(xml != undefined){
+
+// 		function doc_data(title, tag, tagName){
+
+// 				if(xmlDoc.getElementsByTagName(tagName).length < 1) return "";
+
+
+// 				var txt = '<li class="doc-data"> <div class="title">'+title+'</div>';
+			    
+// 			     var d_data = xmlDoc.getElementsByTagName(tagName)[0].childNodes;
+			     
+
+			     
+// 			     for (var i = 0; i < d_data.length ;i++) {
+			        
+
+// 								var articles = d_data[i].getElementsByTagName("ARTICLE");
+
+			                              
+// 			        for(var j = 0 ; j< articles.length ; j++){
+			        			       
+// 			        			 var sub_title = articles[j].attributes.getNamedItem("title").nodeValue; 		 
+// 			               // console.log(articles[j].attributes.getNamedItem("title").nodeValue);
+// 			        		 // console.log(articles[j].textContent);           
+// 			        		 txt += '<div class="'+tag+'"><div class="sub-title">'+sub_title+'</div>';
+
+// 			        		 var paragraps = articles[j].getElementsByTagName("PARAGRAPH");
+			             
+// 				             for(var k = 0 ; k < paragraps.length; k++){
+// 				             		// console.log(paragraps[k].textContent);
+// 				             		var tagName = paragraps[k].attributes.getNamedItem("tagName").nodeValue;
+                                                        
+
+
+// 				             		var paragrap = paragraps[k].textContent;
+// 				             		 if(tagName == 'table'){
+                                    	
+//                                         txt += '<table class="doc-table">'+paragrap+'</table>';
+                                    
+//                                     }else{
+//                       		              txt += '<div class="sub-content ">'+paragrap+'</div>';
+//                                     }
+				             		
+// 				             }
+
+
+// 				             txt += '</div>';
+
+				            
+			             
+// 			           }
+			          
+					
+
+// 			     }
+
+// 			     txt += '</li>'; 
+
+// 			     return txt;
+// 			}
+
+// 			function getTextByTagName(tagName){
+// 				var x = xmlDoc.getElementsByTagName(tagName);
+
+// 				if(x.length>0){
+// 			  	if(x[0].childNodes.length >0){
+// 			    	return x[0].childNodes[0].nodeValue;
+// 			    }
+// 			  }else{
+// 			  	return "";
+// 			  }
+// 			}
+
+// 		var parser = new DOMParser();
+// 		var xmlDoc = parser.parseFromString(xml,"text/xml");
+
+
+// 		//성상
+// 		var chart =getTextByTagName("CHART");
+
+// 	//표준코드
+// 	  var bar_code = getTextByTagName("BAR_CODE");
+	  
+// 	  //취하구분
+// 	  var cancel_name = getTextByTagName("CANCEL_NAME");
+	  
+// 	  //분류
+// 	  var class_no = getTextByTagName("CLASS_NO");
+	  
+// 	  //위탁제조업체
+// 	  var cnsgn_manuf = getTextByTagName("CNSGN_MANUF");
+	  
+// 	    //제조방법
+// 	  var doc_text = getTextByTagName("DOC_TEXT");
+	  
+// 	  //보험코드
+// 	  var edi_code = getTextByTagName("EDI_CODE");
+	  
+// 	    //효능효과 pdf
+// 	   var ee_doc_id = getTextByTagName("EE_DOC_ID");
+	  
+// 	  //업체명
+// 	  var entp_name = getTextByTagName("ENTP_NAME");
+	  
+// 	  //업체명
+// 	  var entp_no = getTextByTagName("ENTP_NO");
+	  
+// 	  //업체허가번호
+// 	  var etc_otc_code = getTextByTagName("ETC_OTC_CODE");
+	  
+// 	  //변경이력
+// 	  var gbn_name = getTextByTagName("GBN_NAME");
+	  
+// 	    //업종구분
+// 	  var induty_type = getTextByTagName("INDUTY_TYPE");
+	  
+// 	    //첨가제
+// 	  var induty_type = getTextByTagName("INGR_NAME");
+	  
+	  
+// 	    //첨부문서
+// 	  var insert_file = getTextByTagName("INSERT_FILE");
+	  
+	  
+// 	  //품목명
+// 	  var item_name = getTextByTagName("ITEM_NAME");
+	  
+// 	  //허가일자
+// 	  var item_permit_date = getTextByTagName("ITEM_PERMIT_DATE");
+	  
+// 	  //품목기준코드
+// 	  var item_seq = getTextByTagName("ITEM_SEQ");
+	  
+// 	  //유효성분
+// 	  var main_item_ingr = getTextByTagName("MAIN_ITEM_INGR");
+	  
+	  
+// 	  // 완제/원료구분
+// 	    var make_material_flag = getTextByTagName("MAKE_MATERIAL_FLAG");
+	  
+// 	  //원료성분
+// 	  var material_name = getTextByTagName("MATERIAL_NAME");
+	  
+	  
+// 	    //주의사항 pdf
+// 	  var nb_doc_id = getTextByTagName("NB_DOC_ID");
+	  
+	  
+// 	  // 신약
+// 	  var newdrug_class_name = getTextByTagName("NEWDRUG_CLASS_NAME");
+	  
+// 	  // 포장단위
+// 	  var pack_unit = getTextByTagName("PACK_UNIT");
+	  
+// 	  //허가/신고구분
+// 	    var permit_kind_name = getTextByTagName("PERMIT_KIND_NAME");
+	  
+// 	    var reexam_date = getTextByTagName("REEXAM_DATE");
+	  
+// 	  //저장방법
+// 	    var storage_method = getTextByTagName("STORAGE_METHOD"); 
+	    
+// 	//유효기간
+// 		var valid_term = getTextByTagName("VALID_TERM")
+	  
+	  
+	  
+	  
+// 	  // console.log("효능효과");
+// 	  //효능효과
+// 		effect = doc_data("효능·효과", "ee", "EE_DOC_DATA");
+	     
+
+// 	  // console.log("주의사항(일반) 문서 데이터");
+// 	  //주의사항(일반) 문서 데이터
+// 		 nb_doc_data = doc_data("사용상 주의사항", "nb", "NB_DOC_DATA");
+	  
+	  
+// 	    // console.log("용법 용량");
+// 	    //용법 용량
+// 		ud_doc_data = doc_data("용법·용량", "ud", "UD_DOC_DATA");	
+		
+
+
+
+// 		valid_term = '<li><div class="title">유효기간</div><div class="content">'+valid_term+'</div></li>';
+
+
+// 				storage_method = '<li><div class="title">저장방법</div><div class="content">'+storage_method+'</div></li>';
+
+
+// 				main_item_ingr = '<li><div class="title">완제/원료구분</div><div class="content">'+main_item_ingr+'</div></li>';
+
+// 				ingr_name = '<li><div class="title">첨가제</div><div class="content">'+ingr_name+'</div></li>';	
+
+
+
+// 	}
+// }
+// test(199304470);
+function setXml(xml){
+	console.log(b64DecodeUnicode(xml));
+	var drug_data = document.getElementById('drug-data');
+	drug_data.innerHTML = b64DecodeUnicode(xml);
+}
+
+function b64DecodeUnicode(str) {
+        // Going backwards: from bytestream, to percent-encoding, to original string.
+        return decodeURIComponent(atob(str).split('').map(function(c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+    }
+    
+// var dsd = '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<response>\n<header>\n<resultCode>00</resultCode>\n<resultMsg>NORMAL SERVICE.</resultMsg>\n</header>\n<body>\n<numOfRows>10</numOfRows>\n<pageNo>1</pageNo>\n<totalCount>1</totalCount>\n<items>\n<item>\n<ITEM_SEQ>199304470</ITEM_SEQ>\n<ITEM_NAME>징카민정40mg(은행엽건조엑스)(수출명 : 징카프란정)</ITEM_NAME>\n<ENTP_NAME>영진약품(주)</ENTP_NAME>\n<ITEM_PERMIT_DATE>19930715</ITEM_PERMIT_DATE>\n<CNSGN_MANUF>콜마파마(주)</CNSGN_MANUF>\n<ETC_OTC_CODE>일반의약품</ETC_OTC_CODE>\n<CLASS_NO>[02190]기타의 순환계용약</CLASS_NO>\n<CHART>(수출용) 하트형의 연녹색 제피정\n(내수용) 연녹색의 원형필름 제피정</CHART>\n<BAR_CODE>8806424012405,8806424012412,8806424012429,8806424012436</BAR_CODE>\n<MATERIAL_NAME>총량 : 1정260밀리그램-수출용|성분명 : 은행엽건조엑스|분량 : 40|단위 : 밀리그램|규격 : 생규|성분정보 : 총 깅코플라본배당체로서 9.6밀리그람|비고 : ;총량 : 1정281밀리그램-내수용|성분명 : 은행엽건조엑스|분량 : 40|단위 : 밀리그램|규격 : 생규|성분정보 : |비고 :</MATERIAL_NAME>\n<EE_DOC_ID>https://nedrug.mfds.go.kr/pbp/cmn/pdfDownload/199304470/EE</EE_DOC_ID>\n<UD_DOC_ID>https://nedrug.mfds.go.kr/pbp/cmn/pdfDownload/199304470/UD</UD_DOC_ID>\n<NB_DOC_ID>https://nedrug.mfds.go.kr/pbp/cmn/pdfDownload/199304470/NB</NB_DOC_ID>\n<INSERT_FILE/>\n<STORAGE_METHOD>기밀용기, 실온보관(1~30℃)</STORAGE_METHOD>\n<VALID_TERM>제조일로부터 36 개월</VALID_TERM>\n<REEXAM_TARGET/>\n<REEXAM_DATE/>\n<PACK_UNIT/>\n<EDI_CODE>642401240</EDI_CODE>\n<DOC_TEXT/>\n<PERMIT_KIND_NAME>신고</PERMIT_KIND_NAME>\n<ENTP_NO>1421</ENTP_NO>\n<MAKE_MATERIAL_FLAG/>\n<NEWDRUG_CLASS_NAME/>\n<INDUTY_TYPE>의약품</INDUTY_TYPE>\n<CANCEL_DATE/>\n<CANCEL_NAME>정상</CANCEL_NAME>\n<CHANGE_DATE>20200723</CHANGE_DATE>\n<NARCOTIC_KIND_CODE/>\n<GBN_NAME>사용상주의사항변경(부작용포함), 2020-07-23/사용상주의사항변경(부작용포함), 2019-09-16/용법용량변경, 2019-09-16/성상변경, 2019-08-06/제품명칭변경, 2019-07-09/제품명칭변경, 2019-06-24/성상변경, 2019-06-24/사용상주의사항변경(부작용포함), 2019-06-24/용법용량변경, 2017-10-30/저장방법 및 유효기간(사용기간)변경, 2015-04-15/사용상주의사항변경(부작용포함), 2011-12-15/제품명칭변경, 2008-03-14/제품명칭변경, 2006-05-25/용법용량변경, 1999-03-24/효능효과변경, 1999-03-24/용법용량변경, 1997-10-04/효능효과변경, 1997-10-04/효능효과변경, 1996-04-10/용법용량변경, 1996-04-10/사용상주의사항변경(부작용포함), 1996-04-10/사용상주의사항변경(부작용포함), 1995-01-01/용법용량변경, 1995-01-01/효능효과변경, 1995-01-01/성상변경, 1993-11-09</GBN_NAME>\n<TOTAL_CONTENT>1260-수출용/1281-내수용</TOTAL_CONTENT>\n<EE_DOC_DATA><DOC title=\"효능효과\" type=\"EE\">\r\n  <SECTION title=\"\">\r\n    <ARTICLE title=\"1. 주효능 효과\">\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[1) 말초동맥 순환장애(간헐성 파행증)의 치료]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[2) 어지러움, 혈관성 및 퇴행성 이명]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[3) 이명, 두통, 기억력감퇴, 집중력장애, 우울감, 어지러움 등의 치매성 증상을 수반하는 기질성 뇌기능장애의 치료]]></PARAGRAPH>\r\n    </ARTICLE>\r\n  </SECTION>\r\n</DOC></EE_DOC_DATA>\n<UD_DOC_DATA><DOC title=\"용법용량\" type=\"UD\">\r\n  <SECTION title=\"\">\r\n    <ARTICLE title=\"\">\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[성인]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[1) 말초동맥순환장애, 어지러움, 이명(귀울림): 은행엽건조엑스로서 1회 40밀리그람 1일 3회 또는 1회 80밀리그람, 1일 2회 경구투여한다(먹는다).]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[2) 기질성 뇌기능장애 : 은행엽건조엑스로서 1회 40~80밀리그람 1일 3회 또는 1회 120밀리그람 1일 2회 경구투여한다(먹는다).]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[연령(나이), 증상에 따라 적절히 증감한다]]></PARAGRAPH>\r\n    </ARTICLE>\r\n  </SECTION>\r\n</DOC></UD_DOC_DATA>\n<NB_DOC_DATA><DOC title=\"사용상의주의사항\" type=\"NB\">\r\n  <SECTION title=\"\">\r\n    <ARTICLE title=\"1. 다음과 같은 사람은 이 약을 복용(사용)하지 말 것\">\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[1) 이 약에 과민증 환자]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[2) 12세 이하의 소아(소아의 사용경험이 충분하지 않으므로 12세 이하의 소아에는 투여하지 않는다.)]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[3) 임부 (동물시험에서 기형발생은 없었으나 임신중의 투여에 대한 충분한 사용경험이 적다.)]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[4) 이 약은 유당을 함유하고 있으므로, 갈락토오스 불내성(galactose intolerance), Lapp 유당분해효소 결핍증(Lapp lactase deficiency) 또는 포도당-갈락토오스 흡수장애(glucose-galactose malabsorption) 등의&nbsp;유전적인 문제가 있는 환자]]></PARAGRAPH>\r\n    </ARTICLE>\r\n    <ARTICLE title=\"2. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것\">\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[1) 출혈 장애가 있거나 출혈의 위험을 증가시키는 약물(항응고제(예: 펜프로쿠몬, 와파린)), 항혈소판제(예:클로피도그렐, 아세틸살리실산 및 기타 비스테로이드성 항염증제))을 복용하고 있는 환자]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[2) 수유부(모유로 이행여부가 알려지지 않음)]]></PARAGRAPH>\r\n    </ARTICLE>\r\n    <ARTICLE title=\"3. 다음과 같은 경우 이 약의 복용(사용)을 즉각 중단하고 의사, 치과의사, 약사와 상의 할 것, 상담시 가능한 첨부문서를 소지할 것\">\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[1) 수술이 예정된 자]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[2) 복용 3개월 후 증상의 개선이 없거나 악화되는 경우]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[3) 이상반응]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[① 드물게 가벼운 위장관 불쾌감, 두통, 알레르기성 피부반응이 나타날 수 있다.]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[② 국내 자발적 이상사례 보고자료(1989-2013년)를 분석한 결과, 이상사례가 보고된 다른 의약품에서 발생한 이상사례에 비해 통계적으로 유의하게 많이 보고된 이상사례는 다음과 같이 나타났다. 다만, 이로서 곧 해당성분과 다음의 이상사례 간에 인과관계가 입증된 것을 의미하는 것은 아니다.]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[&#x2022; 어지러움]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[&#x2022; 가려움증]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[③ 기타 : 아나필락시스 또는 아나필락시스 반응 보고가 있다. 다만, 이로서 해당성분과 이상사례 간에 인과관계가 입증된 것을 의미하는 것은 아니다.]]></PARAGRAPH>\r\n    </ARTICLE>\r\n    <ARTICLE title=\"4. 기타 이약의 복용(사용)시 주의할 사항\">\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[이 약은 고혈압 치료제가 아니므로 특별한 치료를 요하는 고혈압 환자에는 투여하지 않는다.]]></PARAGRAPH>\r\n    </ARTICLE>\r\n    <ARTICLE title=\"5. 저장상의 주의사항\">\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[1) 어린이의 손에 닿지 않는 곳에 보관한다.]]></PARAGRAPH>\r\n      <PARAGRAPH tagName=\"p\" textIndent=\"\" marginLeft=\"\"><![CDATA[2) 직사일광을 피하고 되도록이면 습기가 적은 서늘한 곳에 밀전하여 보관한다.]]></PARAGRAPH>\r\n    </ARTICLE>\r\n  </SECTION>\r\n</DOC></NB_DOC_DATA>\n<PN_DOC_DATA/>\n<MAIN_ITEM_INGR>은행엽건조엑스/은행엽건조엑스</MAIN_ITEM_INGR>\n<INGR_NAME>오파드라이AMBII녹색(88A610016)/스테아르산마그네슘/카르복시메틸셀룰로오스 칼슘/전분글리콜산나트륨/콜로이드성이산화규소/히드록시프로필셀룰로오스/미결정셀룰로오스/유당수화물/오파드라이ⅡOY-L-21019그린 /스테아르산마그네슘/탤크/저치환도히드록시프로필셀룰로오스/콜로이드성이산화규소/인산수소칼슘수화물/미결정셀룰로오스</INGR_NAME>\n</item>\n</items>\n</body>\n</response>\n\';
+// var dsd = dsd.replace(/\r?\n|\r/g, '\\r\\n');
+
+// setXml(dsd);
+
+
+</script>

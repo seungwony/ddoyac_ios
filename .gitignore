@@ -1,0 +1,8 @@
+/appstore
+/backup
+.DS_Store
+/Pods
+/ddoyac/Resource/drugs.realm
+Podfile.lock
+*.xcodeproj
+

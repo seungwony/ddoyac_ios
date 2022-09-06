@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailWebViewController" customModule="ddoyac" customModuleProvider="target">
+            <connections>
+                <outlet property="preview" destination="mXt-W5-K55" id="0Ao-U5-Ihy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="WtD-3w-Tu8" id="l6b-db-468"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXt-W5-K55">
+                    <rect key="frame" x="0.0" y="74" width="414" height="450"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="450" id="c0F-l3-Plt"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z17-x0-qWE" customClass="RoundButton" customModule="ddoyac" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8C-tD-M6K" customClass="RoundButton" customModule="ddoyac" customModuleProvider="target">
+                            <rect key="frame" x="182" y="12.5" width="50" height="5"/>
+                            <color key="backgroundColor" systemColor="systemGray3Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="YD9-yy-QGt"/>
+                                <constraint firstAttribute="width" constant="50" id="s78-lA-BIn"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Z8C-tD-M6K" firstAttribute="centerX" secondItem="z17-x0-qWE" secondAttribute="centerX" id="1UE-x7-Fij"/>
+                        <constraint firstAttribute="height" constant="60" id="EPD-VP-an0"/>
+                        <constraint firstItem="Z8C-tD-M6K" firstAttribute="centerY" secondItem="z17-x0-qWE" secondAttribute="centerY" constant="-15" id="w9w-V8-IOD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WtD-3w-Tu8">
+                    <rect key="frame" x="0.0" y="74" width="414" height="822"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fEl-kr-tkW"/>
+            <constraints>
+                <constraint firstItem="mXt-W5-K55" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7cB-cS-vsd"/>
+                <constraint firstItem="z17-x0-qWE" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="CG3-eK-PRo"/>
+                <constraint firstItem="z17-x0-qWE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EJ7-J4-L8q"/>
+                <constraint firstItem="WtD-3w-Tu8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KZf-ku-arj"/>
+                <constraint firstItem="fEl-kr-tkW" firstAttribute="top" secondItem="mXt-W5-K55" secondAttribute="top" constant="-30" id="PZ9-ny-eWo"/>
+                <constraint firstItem="mXt-W5-K55" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Ufg-Jn-Tc7"/>
+                <constraint firstItem="fEl-kr-tkW" firstAttribute="top" secondItem="z17-x0-qWE" secondAttribute="top" id="aZ8-ZG-uGI"/>
+                <constraint firstItem="WtD-3w-Tu8" firstAttribute="top" secondItem="z17-x0-qWE" secondAttribute="bottom" constant="-30" id="oRc-sg-lQO"/>
+                <constraint firstAttribute="bottom" secondItem="WtD-3w-Tu8" secondAttribute="bottom" id="qPc-7h-Fgm"/>
+                <constraint firstAttribute="trailing" secondItem="WtD-3w-Tu8" secondAttribute="trailing" id="yJL-Tw-k86"/>
+            </constraints>
+            <point key="canvasLocation" x="-23.188405797101453" y="83.705357142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Z8C-tD-M6K">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="z17-x0-qWE">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
